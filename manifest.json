@@ -1,0 +1,9 @@
+{
+	"id": "widgetry",
+	"name": "Widgetry",
+	"version": "0.1.0",
+	"minAppVersion": "1.15.0",
+	"description": "Insert customizable clock, countdown and quote widgets into your notes.",
+	"author": "WestKronos147",
+	"isDesktopOnly": true
+}

@@ -1,0 +1,112 @@
+/* Widgetry : couleurs et espacements issus du thème Obsidian uniquement. */
+
+.widgetry-host {
+	position: relative;
+}
+
+.widgetry {
+	padding: var(--size-4-3) var(--size-4-4);
+	border: 1px solid var(--background-modifier-border);
+	border-radius: var(--radius-m);
+	background-color: var(--background-secondary);
+	color: var(--text-normal);
+}
+
+.widgetry-align-left {
+	text-align: left;
+}
+
+.widgetry-align-center {
+	text-align: center;
+}
+
+.widgetry-align-right {
+	text-align: right;
+}
+
+.widgetry-value {
+	font-variant-numeric: tabular-nums;
+	font-weight: var(--font-semibold);
+	line-height: 1.2;
+}
+
+.widgetry-title,
+.widgetry-status {
+	color: var(--text-muted);
+}
+
+.widgetry-quote {
+	white-space: pre-wrap;
+	font-style: italic;
+	line-height: 1.4;
+}
+
+.widgetry-size-small .widgetry-value {
+	font-size: 1.25em;
+}
+
+.widgetry-size-medium .widgetry-value {
+	font-size: 2em;
+}
+
+.widgetry-size-large .widgetry-value {
+	font-size: 3em;
+}
+
+.widgetry-size-small .widgetry-quote {
+	font-size: 1em;
+}
+
+.widgetry-size-medium .widgetry-quote {
+	font-size: 1.25em;
+}
+
+.widgetry-size-large .widgetry-quote {
+	font-size: 1.6em;
+}
+
+.widgetry-error {
+	color: var(--text-error);
+	font-size: var(--font-ui-small);
+}
+
+/* Message d'erreur affiché à la place d'un widget : même marge latérale réservée
+   et hauteur suffisante pour que le bouton de modification ne le recouvre pas. */
+.widgetry-host > div > .widgetry-error {
+	box-sizing: border-box;
+	min-height: 34px;
+	padding: var(--size-4-2) calc(var(--size-4-4) + 28px);
+}
+
+/* Dans une note, marge latérale réservée (symétrique pour garder le centrage) :
+   le bouton de modification s'y place sans recouvrir le contenu. */
+.widgetry-host .widgetry {
+	padding-left: calc(var(--size-4-4) + 28px);
+	padding-right: calc(var(--size-4-4) + 28px);
+}
+
+/* En bas à gauche : hors de la zone du bouton natif d'Obsidian (en haut à droite). */
+.widgetry-edit {
+	position: absolute;
+	bottom: var(--size-4-1);
+	left: var(--size-4-1);
+	opacity: 0;
+}
+
+.widgetry-host:hover .widgetry-edit,
+.widgetry-edit:focus-visible {
+	opacity: 1;
+}
+
+.widgetry-preview {
+	margin-bottom: var(--size-4-3);
+}
+
+.widgetry-form-error {
+	color: var(--text-error);
+}
+
+.widgetry-modal .widgetry-quote-input {
+	width: 100%;
+	min-height: 4em;
+}
